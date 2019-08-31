@@ -12,3 +12,10 @@
 - You can choice two character(Shia Labeouf or Kujo Jotaro)
 - If you want to try JOJO, just do it
     - `sudo python scan_keyboard_Jotaro.py`
+
+## Daily use (alias)
+
+```
+alias ora="cd /Users/keiichi/develop/JustDoItKeyboard;sudo python scan_keyboard_Jotaro.py"
+alias shia="cd /Users/keiichi/develop/JustDoItKeyboard;sudo python scan_keyboard_ShiaLabeouf.py"
+```
