@@ -5,6 +5,10 @@ You can just do it when you just type it.
 ![](justdoit_demo.gif)
 ![](oraora_demo.gif)
 
+[Just Do It! on Youtube](https://www.youtube.com/watch?v=K96ikUeUyzg&feature=youtu.be)
+
+[OraOraOra! on Youtube](https://www.youtube.com/watch?v=0CT8Yaq3hWM&feature=youtu.be)
+
 ## Environment
 
 - Developed on Python 3.6.7, Mac
@@ -26,8 +30,8 @@ You can just do it when you just type it.
 ## Daily use (alias)
 
 ```
-alias ora="cd /Users/keiichi/develop/JustDoItKeyboard;sudo python scan_keyboard_Jotaro.py"
-alias shia="cd /Users/keiichi/develop/JustDoItKeyboard;sudo python scan_keyboard_ShiaLabeouf.py"
+alias ora="cd /path/to/source/JustDoItKeyboard;sudo python scan_keyboard_Jotaro.py"
+alias shia="cd /path/to/source/JustDoItKeyboard;sudo python scan_keyboard_ShiaLabeouf.py"
 ```
 
 ![](doneit.png)
