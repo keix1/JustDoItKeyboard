@@ -3,8 +3,6 @@
 import tkinter
 from PIL import Image, ImageTk
 import random
-import time
-import threading
 import argparse
 
 class ScreenSticker:

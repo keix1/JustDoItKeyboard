@@ -1,16 +1,12 @@
 # coding: utf-8
 
-import sys
-import os
-import keyboard
-import time
-import wave
 from audio_player import AudioPlayer
-import threading
-import random
-import json
 from screen_sticker import ScreenSticker
+import keyboard
+import threading
 import subprocess
+import random
+
 
 class KeyScanner:
 

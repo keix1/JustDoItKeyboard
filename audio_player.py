@@ -1,12 +1,6 @@
 # coding: utf-8
 
-import time
-from pydub import AudioSegment
-from pydub.playback import play
-from pydub.utils import ratio_to_db
 import threading
-import glob
-import os
 from playsound import playsound
 
 class AudioPlayer:
