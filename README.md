@@ -21,9 +21,9 @@ You can just do it when you just type it.
 4. `sudo python scan_keyboard_ShiaLabeouf.py`
 5. Enjoy!
 
-## Character Choice
+## Character Selection
 
-- You can choice two character(Shia Labeouf or Kujo Jotaro)
+- You can choose two characters (Shia Labeouf or Kujo Jotaro)
 - If you want to try JOJO, just do it:
     - `sudo python scan_keyboard_Jotaro.py`
 
