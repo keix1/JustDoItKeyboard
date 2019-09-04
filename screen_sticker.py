@@ -16,7 +16,6 @@ class ScreenSticker:
         # タイトルバー削除
         self.window.overrideredirect(True)
 
-        print(category, sticker)
         # 画像を表示するための準備
         self.img_raw = Image.open(f'data/{category}/{sticker}.png')
         w, h = self.img_raw.size
@@ -64,4 +63,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
     screen_sticker = ScreenSticker()
     screen_sticker.stick(args.category, args.sticker)
-    screen_sticker.mainloop()

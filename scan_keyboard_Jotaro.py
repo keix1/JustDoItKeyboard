@@ -44,7 +44,6 @@ if __name__ == "__main__":
     screen_sticker = ScreenSticker()
     key_scanner = KeyScanner()
     key_scanner.start_scan()
-    screen_sticker.mainloop()
-
-
-
+    
+    while True:
+        pass
