@@ -8,13 +8,15 @@ import argparse
 class ScreenSticker:
 
     def __init__(self):
-        self.window = tkinter.Tk()
-        self.window.geometry(f"0x0")
+        pass
 
     def stick(self, category, sticker):
         
+        # 新しいウィンドウ作成
+        window = tkinter.Tk()
+
         # タイトルバー削除
-        self.window.overrideredirect(True)
+        window.overrideredirect(True)
 
         # 画像を表示するための準備
         self.img_raw = Image.open(f'data/{category}/{sticker}.png')
@@ -22,37 +24,33 @@ class ScreenSticker:
         img = ImageTk.PhotoImage(self.img_raw)
 
         # 画面サイズから位置を出す
-        screenwidth = self.window.winfo_screenwidth()
-        screenheight = self.window.winfo_screenheight()
+        screenwidth = window.winfo_screenwidth()
+        screenheight = window.winfo_screenheight()
         x = random.randint(0, screenwidth)
         y = random.randint(0, screenheight)
 
         # windowサイズと位置を変更
-        self.window.geometry(f"{w}x{h}+{x}+{y}")
+        window.geometry(f"{w}x{h}+{x}+{y}")
 
         # 画像を表示するためのキャンバスの作成（黒で表示）
-        canvas = tkinter.Canvas(self.window, bg = "black", width=w, height=h)
+        canvas = tkinter.Canvas(window, bg = "black", width=w, height=h)
         canvas.place(x=0, y=0) # 左上の座標を指定
 
         # キャンバスに画像を表示する。第一引数と第二引数は、x, yの座標
         canvas.create_image(0, 0, image=img, anchor=tkinter.NW)
 
         def destroy_window():
-            self.window.quit()
-            self.window.destroy()
+            window.quit()
+            window.destroy()
             exit()
-        self.window.after(1500, destroy_window)
 
         # 最前面に表示
-        self.window.lift()
-        self.window.attributes('-topmost',True)
-        self.window.after_idle(self.window.attributes,'-topmost',False)
+        window.lift()
+        window.attributes('-topmost',True)
+        window.after_idle(window.attributes,'-topmost',False)
 
-        self.window.mainloop()
-
-    def mainloop(self):
-        self.window.mainloop()
-
+        window.after(1500, destroy_window)
+        window.mainloop()
 
 if __name__ == "__main__":
 
@@ -63,3 +61,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     screen_sticker = ScreenSticker()
     screen_sticker.stick(args.category, args.sticker)
+
