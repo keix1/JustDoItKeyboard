@@ -18,7 +18,7 @@ You can just do it when you just type it.
 1. `git clone https://github.com/keix1/JustDoItKeyboard.git`
 2. `cd JustDoItKeyboard`
 3. `pip install -r requirements.txt`
-4. `sudo python scan_keyboard_ShiaLabeouf.py`
+4. `sudo python scan_keyboard_ShiaLaBeouf.py`
 5. Enjoy!
 
 ## Character Selection
