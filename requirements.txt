@@ -1,3 +1,4 @@
 keyboard
 playsound
 pillow
+pygobject
