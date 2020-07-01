@@ -19,6 +19,9 @@ You can just do it when you just type it.
 2. `cd JustDoItKeyboard`
 3. `pip install -r requirements.txt`
 4. `sudo python scan_keyboard_ShiaLaBeouf.py`
+    - `sudo` change your python, so check your install environment.
+    - If you use pyenv, for exmaple this:
+        - `sudo /home/<username>/.pyenv/shims/python scan_keyboard_ShiaLaBeouf.py`
 5. Enjoy!
 
 ## Character Selection
