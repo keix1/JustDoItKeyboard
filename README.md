@@ -15,7 +15,7 @@ You can just do it when you just type it.
 
 ## How to install
 
-1. `git clone git@github.com:keix1/JustDoItKeyboard.git`
+1. `git clone https://github.com/keix1/JustDoItKeyboard.git`
 2. `cd JustDoItKeyboard`
 3. `pip install -r requirements.txt`
 4. `sudo python scan_keyboard_ShiaLabeouf.py`
